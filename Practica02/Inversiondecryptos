@@ -1,8 +1,0 @@
-Totaldesaldo = 0
-Cripto = 0
-Montoagastar = 0
-break = false
-#    Saldo    I     Cripto  I  Promedio gastado   I
-#     500            400            400
-print("¿Cuanto vas a gastar en criptos?)
-Totaldesaldo = 

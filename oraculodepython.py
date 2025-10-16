@@ -1,8 +1,8 @@
 def iniciar_oraculo():
-    print("Sea bienvenido al grandioso oraculo de Python, ¿Deseas conocer tu destino?")
+ print("Sea bienvenido al grandioso oraculo de Python, ¿Deseas conocer tu destino?")
 iniciar_oraculo = int(input("""
-1. Si
-2. No
+ 1. Si
+ 2. No
 """))
 while iniciar_oraculo == 1:
     Nombre = (input("Ingresa tu nombre:"))
@@ -13,16 +13,15 @@ while iniciar_oraculo == 1:
         return Elementocalculado
     def asignarme_un_elemento(Elementocalculado):
         if Elementocalculado == 0 or 1:
-            Elemento = ("Metal")
+            return "Metal"
         elif Elementocalculado == 2 or 3:
-            Elemento = ("Agua")
+            return "Agua"
         elif Elementocalculado == 4 or 5:
-            Elemento = ("Madera")
+            return "Madera"
         elif Elementocalculado == 6 or 7:
-            Elemento = ("Fuego")
+            return "Fuego"
         elif Elementocalculado == 8 or 9:
-            Elemento = ("Tierra")
-        return print(Elemento)
+             return "Tierra"
     print("Bien ahora elige tu numero de la suerte del 1 a 4")
     Numero_de_suerte = int(input("""
     1. Elegir el Num 1
@@ -30,19 +29,16 @@ while iniciar_oraculo == 1:
     3. Elegir el Num 3
     4. Elegir el Num 4
     """))
-    def generar_prediccion(Nombrepara, Elementopara):
-        Elemento = ()
-        Nombrepara == Nombre
-        Elementopara == Elemento
+    def generar_prediccion(Nombre, Elemento):
         match Numero_de_suerte:
             case 1:
-                print(f"Felicitaciones", {Nombre}, "la conexion que tienes con el elemento...", {Elemento}, "Es demasiado poderosa, seras una peesona bastante sabia!☄")
+                return f"Felicitaciones", {Nombre}, "la conexion que tienes con el elemento...", {Elemento}, "Es demasiado poderosa, seras una peesona bastante sabia!☄"
             case 2:
-                print(f"Muy bien", {Nombre}, "tu conexion con el elemento", {Elemento}, "Trasciende mas de lo que alguien comun se esperaria, sigue asi☄")
+                return f"Muy bien", {Nombre}, "tu conexion con el elemento", {Elemento}, "Trasciende mas de lo que alguien comun se esperaria, sigue asi☄"
             case 3:
-                print(f"Tu camino es uno muy dificil de recorrer", {Nombre}, "pero alguien con tu elemento como lo es el...", {Elemento}, "tiene un futuro brillante☄")
+                return f"Tu camino es uno muy dificil de recorrer", {Nombre}, "pero alguien con tu elemento como lo es el...", {Elemento}, "tiene un futuro brillante☄"
             case 4:
-                print(f"Vaya", {Nombre}, "Tu futuro se ve realmente esperanzador, no me sorprende pues despues de todo posees el elemento", {Elemento}, "☄")
+                return f"Vaya", {Nombre}, "Tu futuro se ve realmente esperanzador, no me sorprende pues despues de todo posees el elemento", {Elemento}, "☄"
     print("¿Deseas conocer tu destino? (De nuevo)")
     iniciar_oraculo = int(input("""
     1. Si
